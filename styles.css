@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 236, 239);
+  position: relative;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  border-bottom: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#nav h5 {
+  font-size: 15px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 4px 9px;
+  margin: 0 7px;
+  font-weight: 500;
+}
+
+#center {
+  height: calc(100% - 100px);
+  width: 100%;
+  position: relative;
+  padding: 10px 20px;
+}
+
+#center h1 {
+  font-size: 100px;
+  text-align: center;
+  position: absolute;
+  left: 51%;
+  white-space: nowrap;
+  transform: translate(-50%, 0);
+  font-weight: 900;
+  font-style: italic;
+  z-index: 999;
+  font-family: "Monument", sans-serif;
+}
+
+#center h2 {
+  font-size: 100px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  transform: translate(-50%, 0);
+  font-weight: 900;
+  font-style: italic;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  color: transparent;
+  top: 2px;
+  font-family: "Monument", sans-serif;
+  z-index: 999;
+}
+
+#img {
+  position: absolute;
+  top: 60%;
+  height: 65%;
+  width: 67%;
+  border: 2px solid black;
+
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#img img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+  object-position: bottom;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+button {
+  padding: 17px 36px;
+  font-size: 15px;
+  position: absolute;
+  top: 30%;
+  transform: rotate(-5deg);
+  right: 10%;
+  background-color: green;
+  text-transform: uppercase;
+  border-radius: 50%;
+  text-transform: capitalize;
+  font-weight: 550;
+}
+
+#shocks {
+  height: 210px;
+  width: 230px;
+  background-image: url(https://images.unsplash.com/photo-1535488407783-1c7c7152e48a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  border: 2px solid black;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  top: 25%;
+  left: 10%;
+  transform: rotate(15deg);
+}
